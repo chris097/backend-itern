@@ -8,11 +8,11 @@ app.use(express.json())
 
 const user = []
 
-fs.createReadStream('data.csv')
-.pipe(csv({}))
-.on('data', (data) => user.push(data))
-.on('end', () => {
-    console.log(user)
+// fs.createReadStream('data.csv')
+// .pipe(csv({}))
+// .on('data', (data) => user.push(data))
+// .on('end', () => {
+//     console.log(user)
 })
 
 
