@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/chris097/express-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "csv-parser": "^3.0.0",
+    "express": "^4.17.1",
+    "joi": "^13.1.0"
   }
 }
