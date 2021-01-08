@@ -8,13 +8,13 @@ app.use(express.json())
 
 const user = []
 
-
 fs.createReadStream('data.csv')
 .pipe(csv({}))
 .on('data', (data) => user.push(data))
 .on('end', () => {
     console.log(user)
 })
+
 
 app.get('/api/csv', (req, res) =>{
     res.send(user)
@@ -36,9 +36,11 @@ app.post('/api/csv', (req, res) => {
     const item = {
         conversional_key: user.length + 1,
         json:[
-            {firstName: req.body.firstName},
-            {lastName: req.body.lastName},
-            {age: req.body.age}
+        {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            age: req.body.age
+        }
         ]
     };
     user.push(item);

@@ -1,4 +1,3 @@
-firstName,lastName,age
-Chirstian, Chiemela, 25
-Jane, Doe, 30
-Paul, Smith, 45
+Conversional_key,Firstname,Lastname,Age
+1, Ada, Stack, 21
+2, Ada, Stack, 21
